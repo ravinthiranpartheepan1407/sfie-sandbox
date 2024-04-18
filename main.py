@@ -5,9 +5,6 @@ import sys
 from streamlit_chat import message
 from rag import ChatPDF
 
-__import__('pysqlite3')
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
-
 
 st.set_page_config(
     page_title="SFIE AI Sandbox"
